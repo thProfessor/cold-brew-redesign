@@ -1,0 +1,23 @@
+.img__container {
+  display: flex;
+  background-color: var(--slider);
+  column-gap: 30px;
+  padding: 50px 20px;
+  align-items: center;
+  border-radius: 0 55px 55px 0;
+}
+.reversed {
+  border-radius: 55px 0 0 55px;
+}
+
+.slider_image {
+  width: 120px;
+}
+@media screen and (max-width: 540px) {
+  .slider_image {
+    width: 80px;
+  }
+  .img__container {
+    padding: 40px 10px;
+  }
+}

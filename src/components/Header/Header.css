@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.icon__header {
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}

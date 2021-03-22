@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+
+:root {
+  --background: #502e2d;
+  --imagebk: #eead53;
+  --headingColor: #f4e6cc;
+  --btnbk: #8bcac1;
+  --textColor: #cbb09f;
+  --slider: #442624;
+  --offer: #e5594c;
+  --footer: #cac0bf;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  margin: 0;
+  background-color: var(--background);
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading__main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+}
+.heading__title {
+  -webkit-text-stroke: 8px var(--headingColor);
+  font-size: 180px;
+  line-height: 0.9em;
+  color: var(--background);
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 10px;
+  text-shadow: 4px 3px 15px rgb(53, 21, 21);
+}
+.container__img {
+  position: absolute;
+  top: -30px;
+  left: 82px;
+  border: 50%;
+  border-radius: 50%;
+  transform: rotateZ(-25deg);
+}
+.title__image__logo {
+  object-fit: contain;
+  width: 80px;
+  border-radius: 50%;
+}
+.coffee {
+  background-color: var(--btnbk);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 24px;
+  border: none;
+  font-family: roboto;
+  display: flex;
+  position: relative;
+  left: -14%;
+  margin: 32px 0;
+}
+.price {
+  transform: translateX(-60%);
+}
+.price__number {
+  color: var(--textColor);
+  font-size: 32px;
+}
+.price__logo {
+  background-color: var(--imagebk);
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 25px;
+  box-shadow: 4px 3px 10px rgb(53, 21, 21);
+}
+.content {
+  color: #fff;
+  font-family: roboto;
+  line-height: 1.8em;
+  color: #e4cdbe;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 540px) {
+  .heading__title {
+    font-size: 150px;
+    -webkit-text-stroke: 5px var(--headingColor);
   }
 }
